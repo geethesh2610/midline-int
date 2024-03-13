@@ -1278,8 +1278,28 @@ video {
   padding-bottom: 8cqw;
 }
 
+.pt-\[0cqw\] {
+  padding-top: 0cqw;
+}
+
+.pb-\[cqw\] {
+  padding-bottom: cqw;
+}
+
+.pb-\[0cqw\] {
+  padding-bottom: 0cqw;
+}
+
+.pb-\[5cqw\] {
+  padding-bottom: 5cqw;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .font-mont {
@@ -1714,6 +1734,26 @@ video {
   .md\:py-\[\.75cqw\] {
     padding-top: .75cqw;
     padding-bottom: .75cqw;
+  }
+
+  .md\:px-\[114cqw\] {
+    padding-left: 114cqw;
+    padding-right: 114cqw;
+  }
+
+  .md\:px-\[14cqw\] {
+    padding-left: 14cqw;
+    padding-right: 14cqw;
+  }
+
+  .md\:px-\[18cqw\] {
+    padding-left: 18cqw;
+    padding-right: 18cqw;
+  }
+
+  .md\:px-\[16cqw\] {
+    padding-left: 16cqw;
+    padding-right: 16cqw;
   }
 
   .md\:pt-\[3cqw\] {
