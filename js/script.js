@@ -7,39 +7,41 @@ const deskProdBtn = document.querySelector("#desktop-prod-button");
 const deskProd = document.querySelector("#desktop-prod");
 const body = document.querySelector("body");
 
-mobButton.addEventListener("click", function () {
-  if (mobNav.classList.contains("-translate-y-full")) {
-    mobNav.classList.remove("-translate-y-full");
-    body.classList.add("overflow-hidden");
-    return;
-  }
-  mobNav.classList.add("-translate-y-full");
-  body.classList.remove("overflow-hidden")
-});
+if (mobButton) {
+  mobButton.addEventListener("click", function () {
+    if (mobNav.classList.contains("-translate-y-full")) {
+      mobNav.classList.remove("-translate-y-full");
+      body.classList.add("overflow-hidden");
+      return;
+    }
+    mobNav.classList.add("-translate-y-full");
+    body.classList.remove("overflow-hidden");
+  });
+}
 
-mobProdBtn.addEventListener("click", function () {
-  if (mobProdList.classList.contains("h-0", "overflow-hidden")) {
-    mobProdList.classList.remove("h-0", "overflow-hidden");
-    return;
-  }
-  mobProdList.classList.add("h-0", "overflow-hidden");
-});
+if (mobProdBtn) {
+  mobProdBtn.addEventListener("click", function () {
+    if (mobProdList.classList.contains("h-0", "overflow-hidden")) {
+      mobProdList.classList.remove("h-0", "overflow-hidden");
+      return;
+    }
+    mobProdList.classList.add("h-0", "overflow-hidden");
+  });
+}
 
-deskProdBtn.addEventListener('click', function() {
-    console.log('sd');
-    if (deskProd.classList.contains('translate-y-3')) {
+if (deskProdBtn) {
+  deskProdBtn.addEventListener("click", function () {
+    console.log("sd");
+    if (deskProd.classList.contains("translate-y-3")) {
       deskProd.classList.remove(
         "translate-y-3",
         "opacity-0",
         "pointer-events-none"
       );
-      return
+      return;
     }
-    deskProd.classList.add(
-      "translate-y-3",
-      "opacity-0",
-      "pointer-events-none"
-    );
-})
+    deskProd.classList.add("translate-y-3", "opacity-0", "pointer-events-none");
+  });
+}
 
 // Navbar code end

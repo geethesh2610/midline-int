@@ -4,7 +4,7 @@
 
 
 @layer components {
-    input, textarea {
+    input, textarea, select {
         @apply w-full outline-none border-0 ring-0 focus:outline-none focus:border-0 focus:ring-0;
     }
 }
